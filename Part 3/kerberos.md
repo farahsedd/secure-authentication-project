@@ -30,8 +30,9 @@ sudo su
 cd /etc/krb5kdc
 krb5_newrealm
 ````
-[kerberos config ](https://drive.google.com/uc?id=1759EyWSv7EmZ1t1hBv2SgcgJEFBzl26F)
-[ ](https://drive.google.com/uc?uc?export=download&id=1aEg_RhGOO_j-ACWHygjyFBGHWSG925KT)
+
+[kerberos config ](https://drive.google.com/uc?id=1rp-keR5ZlTpMoSgpPeoD7VDt0I6vcQCN)
+[ ](https://drive.google.com/uc?id=1aEg_RhGOO_j-ACWHygjyFBGHWSG925KT)
 
 #### step 5 : add princiapal users   
 Use the kadmin.local utility to create principals for the KDC admin
