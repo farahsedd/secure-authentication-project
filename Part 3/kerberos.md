@@ -29,26 +29,26 @@ sudo su
 cd /etc/krb5kdc
 krb5_newrealm
 ````
-![kerberos config ](https://drive.google.com/uc?id=1rp-keR5ZlTpMoSgpPeoD7VDt0I6vcQCN)
-![ ](https://drive.google.com/uc?id=1aEg_RhGOO_j-ACWHygjyFBGHWSG925KT)
+
+![kerberos config ](https://drive.google.com/uc?id=1sLZvU1UB9tm82p7lptB1XpEaMpnp1_y5)
+![ ](https://drive.google.com/uc?id=1DiYq1lWtrWH2hTibS_1Xb6wKYBpDiqNq)
 
 #### step 5 : add princiapal users   
 Use the kadmin.local utility to create principals for the KDC admin
 ```shell
 kadmin.local:add_principal utilisateur
 kadmin.local:get_principal utilisateur
-kadmin.local:get principals 
+kadmin.local:get principals
 ````
-![add principals ](https://drive.google.com/uc?id=1VmcCmY0tvekGIu_aXFkEkTS25mJZWDSQ)
-![ ](https://drive.google.com/uc?id=1ISKxCIQA7wF-ggEM0NwlhKxJ8AeV4Ow8)
+![add principals ](https://drive.google.com/uc?id=14ldOnxG-hu55ZP57OQdMCSBjghSenjMu)
+![ ](https://drive.google.com/uc?id=1TxbNwM6RKU801TemQfFJt5cBfAQ1OyNA)
 
 
 #### Step 6:  Create a Keytab File
 ````shell  
 file kadm5.keytab
 ````
-![](https://drive.google.com/uc?id=1pOWQW8IlNPCeckNyDTyVeRU8q9qCBvJs)
-
+![](https://drive.google.com/uc?id=1ThVI76fOqU273ZcY9l6Freav3oepD379)
 #### step 7 : create  ticket and store it to keytab file
 ````shell  
 kinit 
@@ -56,7 +56,7 @@ klist -kte kadm5.keytab
 ````
 
 ![ticket generating](https://drive.google.com/uc?id=1eF-4tgYkZxQWudmYfHKKV72MShNUgGWr)
-![](https://drive.google.com/uc?id=1pOWQW8IlNPCeckNyDTyVeRU8q9qCBvJs)
+![](https://drive.google.com/uc?id=1ThVI76fOqU273ZcY9l6Freav3oepD379)
 
 #### step 8 : add policies to each user
 ````shell  
@@ -74,7 +74,7 @@ klist -kte kadm5.keytab
 ````shell  
 apt install openssh-server
 ````
-![install ssh](https://drive.google.com/uc?id=1eF-4tgYkZxQWudmYfHKKV72MShNUgGWr)
+![install ssh](https://drive.google.com/uc?id=16PHX6iz28uoeYwWy-D_kdbjJnOdRIE3E)
 
 Uncomment and set GSSAPIAuthentication and GSSAPICleanUpCreadentials to yes in SSH configuration files. Restart the SSH service.  
 
