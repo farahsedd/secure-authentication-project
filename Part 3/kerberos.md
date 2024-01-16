@@ -31,8 +31,8 @@ cd /etc/krb5kdc
 krb5_newrealm
 ````
 
-[kerberos config ](https://drive.google.com/uc?id=1rp-keR5ZlTpMoSgpPeoD7VDt0I6vcQCN)
-[ ](https://drive.google.com/uc?id=1aEg_RhGOO_j-ACWHygjyFBGHWSG925KT)
+![kerberos config ](https://drive.google.com/uc?id=1rp-keR5ZlTpMoSgpPeoD7VDt0I6vcQCN)
+![ ](https://drive.google.com/uc?id=1aEg_RhGOO_j-ACWHygjyFBGHWSG925KT)
 
 #### step 5 : add princiapal users   
 Use the kadmin.local utility to create principals for the KDC admin
@@ -41,15 +41,15 @@ kadmin.local:add_principal utilisateur
 kadmin.local:get_principal utilisateur
 kadmin.local:get principals 
 ````
-[add principals ](https://drive.google.com/uc?id=1VmcCmY0tvekGIu_aXFkEkTS25mJZWDSQ)
-[ ](https://drive.google.com/uc?id=1ISKxCIQA7wF-ggEM0NwlhKxJ8AeV4Ow8)
+![add principals ](https://drive.google.com/uc?id=1VmcCmY0tvekGIu_aXFkEkTS25mJZWDSQ)
+![ ](https://drive.google.com/uc?id=1ISKxCIQA7wF-ggEM0NwlhKxJ8AeV4Ow8)
 
 
 #### Step 6:  Create a Keytab File
 ````shell  
 file kadm5.keytab
 ````
-[](https://drive.google.com/uc?id=1pOWQW8IlNPCeckNyDTyVeRU8q9qCBvJs)
+![](https://drive.google.com/uc?id=1pOWQW8IlNPCeckNyDTyVeRU8q9qCBvJs)
 
 #### step 7 : create  ticket and add it to keytab file
 ````shell  
@@ -57,8 +57,8 @@ kinit
 klist -kte kadm5.keytab
 ````
 
-[ticket generating](https://drive.google.com/uc?id=1eF-4tgYkZxQWudmYfHKKV72MShNUgGWr)
-[](https://drive.google.com/uc?id=1pOWQW8IlNPCeckNyDTyVeRU8q9qCBvJs)
+![ticket generating](https://drive.google.com/uc?id=1eF-4tgYkZxQWudmYfHKKV72MShNUgGWr)
+![](https://drive.google.com/uc?id=1pOWQW8IlNPCeckNyDTyVeRU8q9qCBvJs)
 
 #### step 8 : add policies to each user
 ````shell  
@@ -68,19 +68,19 @@ klist -kte kadm5.keytab
   l
 
 ````
-[add policies](https://drive.google.com/uc?id=187BzGtxu9_aywQ7qiXh9NE9mM9oNB30z)
-[](https://drive.google.com/uc?id=1sQMvIOX0l6Zy38xrbHnL5M11jAj4_IEW)
-[](https://drive.google.com/uc?id=1eF-4tgYkZxQWudmYfHKKV72MShNUgGWr)
+![add policies](https://drive.google.com/uc?id=187BzGtxu9_aywQ7qiXh9NE9mM9oNB30z)
+![](https://drive.google.com/uc?id=1sQMvIOX0l6Zy38xrbHnL5M11jAj4_IEW)
+![](https://drive.google.com/uc?id=1eF-4tgYkZxQWudmYfHKKV72MShNUgGWr)
 
 #### Step 9: install ssh ,edit sshd_config and ssh_config file
 ````shell  
 apt install openssh-server
 ````
-[install ssh](https://drive.google.com/uc?id=1eF-4tgYkZxQWudmYfHKKV72MShNUgGWr)
+![install ssh](https://drive.google.com/uc?id=1eF-4tgYkZxQWudmYfHKKV72MShNUgGWr)
 
 Uncomment and set GSSAPIAuthentication and GSSAPICleanUpCreadentials to yes in SSH configuration files. Restart the SSH service.  
 
-[configure ssh files](https://drive.google.com/uc?id=16PHX6iz28uoeYwWy-D_kdbjJnOdRIE3E)
+![configure ssh files](https://drive.google.com/uc?id=16PHX6iz28uoeYwWy-D_kdbjJnOdRIE3E)
 
 #### Step 10:Create a Service Principal for SSH
 ````shell  
@@ -88,14 +88,14 @@ sudo kadmin.local
 addprinc -randkey host/kdc.SERVER.tn
 ktadd -k host/kdc.SERVER.tn
 ````
-[create ssh service](https://drive.google.com/uc?id=16LVP-B5Obh1X1dHMKbOj1BYFeswuCq6X)
+![create ssh service](https://drive.google.com/uc?id=16LVP-B5Obh1X1dHMKbOj1BYFeswuCq6X)
 
 #### Step 11 : create a new user account and log using it
 ````shell  
 adduser utilisateur
 su -l utilisateur 
 ````
-[create new user](https://drive.google.com/uc?id=17QAirmxXo8_Gx4-ZvHGu8BbjBIUtO1JL)
+![create new user](https://drive.google.com/uc?id=17QAirmxXo8_Gx4-ZvHGu8BbjBIUtO1JL)
 
 #### Step 12 :  authenticate using TGT 
 get a ticket to be able to authenticate without writing mdp
@@ -105,4 +105,4 @@ klist
 ssh kdc.server.tn
 w 
 ````
-[authenticating using TGT](https://drive.google.com/uc?id=1GuWaL9T5Z3kpAKfJTSy6rMT2AAnH3ag1)
+![authenticating using TGT](https://drive.google.com/uc?id=1GuWaL9T5Z3kpAKfJTSy6rMT2AAnH3ag1)
