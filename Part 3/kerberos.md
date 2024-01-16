@@ -30,8 +30,7 @@ sudo su
 cd /etc/krb5kdc
 krb5_newrealm
 ````
-
-[kerberos config ](https://drive.google.com/uc?export=download&id=1759EyWSv7EmZ1t1hBv2SgcgJEFBzl26F)
+[kerberos config ](https://drive.google.com/uc?id=1759EyWSv7EmZ1t1hBv2SgcgJEFBzl26F)
 [ ](https://drive.google.com/uc?uc?export=download&id=1aEg_RhGOO_j-ACWHygjyFBGHWSG925KT)
 
 #### step 5 : add princiapal users   
