@@ -1,13 +1,11 @@
 #Authentification avec Kerberos
 
 ### Kerberos Overview
-Kerberos is a network authentication protocol that enables secure communication by verifying the identities of users and services using symmetric key cryptography.  
-It relies on a trusted Key Distribution Center (KDC) to issue tickets for authentication, preventing unauthorized access and eavesdropping in networked environments.
+Kerberos is a network authentication protocol that enables secure communication by verifying the identities of users and services using symmetric key cryptography.   
+It relies on a trusted Key Distribution Center (KDC) to issue tickets for authentication, preventing unauthorized access and eavesdropping in networked environments.  
+In the authentication process, a user requests a service, the authentication server verifies the user's identity and issues a Ticket-Granting Ticket (TGT).   
 
-In the authentication process, a user requests a service, the authentication server verifies the user's identity and issues a Ticket-Granting Ticket (TGT).  
-The user then obtains a service ticket from the TGS using the TGT and finally gains access to the desired service by presenting the service ticket.
-
-### Server Configuration 
+### Steps
 
 #### step 1 : configure hostname
 ```shell
@@ -30,7 +28,6 @@ sudo su
 cd /etc/krb5kdc
 krb5_newrealm
 ````
-
 ![kerberos config ](https://drive.google.com/uc?id=1rp-keR5ZlTpMoSgpPeoD7VDt0I6vcQCN)
 ![ ](https://drive.google.com/uc?id=1aEg_RhGOO_j-ACWHygjyFBGHWSG925KT)
 
@@ -51,7 +48,7 @@ file kadm5.keytab
 ````
 ![](https://drive.google.com/uc?id=1pOWQW8IlNPCeckNyDTyVeRU8q9qCBvJs)
 
-#### step 7 : create  ticket and add it to keytab file
+#### step 7 : create  ticket and store it to keytab file
 ````shell  
 kinit 
 klist -kte kadm5.keytab
@@ -98,7 +95,8 @@ su -l utilisateur
 ![create new user](https://drive.google.com/uc?id=17QAirmxXo8_Gx4-ZvHGu8BbjBIUtO1JL)
 
 #### Step 12 :  authenticate using TGT 
-get a ticket to be able to authenticate without writing mdp
+The service principal and key in the keytab file are specific to the SSH service on the mentioned server (kdc.SERVER.tn).  
+When a user obtains a Ticket-Granting Ticket (TGT) during the authentication process, that TGT allows the user to request service tickets for services within the Kerberos realm, including the SSH service on kdc.SERVER.tn
 ````shell 
 kinit
 klist
