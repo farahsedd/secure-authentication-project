@@ -35,7 +35,7 @@ Edit the main BIND configuration file and specify your domain name:
 Creating DNS zone files involves defining resource records (RRs) for a domain, specifying information like IP addresses, mail servers, and other associated resources
 
 ![](https://drive.google.com/uc?id=1tGGoO1O_SjmZOfMVyNeqfUdFODfCrFwy)
-![](https://drive.google.com/uc?id=1zZgTcrxOJDGgibmhEhX7qgx8SOxYCfj4)
+![](https://drive.google.com/uc?id=1ALjNDglIqDBL5GP5UJkA5lp1xf67BqzW)
 
 
 1.1.5  Create Reverse DNS Zone  
@@ -59,4 +59,20 @@ ensures the correct syntax and structure, helping to prevent errors and ensure t
 1.1.8 Restart server and verify resolution
 ![](https://drive.google.com/uc?id=1qdw5OymNAJD3tsPx-qMaPrmcOMGQmFT7)
 ![](https://drive.google.com/uc?id=12_JVrdK-3UjRgiSuUhho4q3qeJHxZ447)
+
+````shell
+dig main.projet.local
+dig ldap.projet.local
+dig openvpn.projet.local
+````
+
 ![](https://drive.google.com/uc?id=152z_cfKNTvyFq1BN9xxYsxVRYT-HO4av)
+
+test each FQDN in browser
+
+![](https://drive.google.com/uc?id=1qpyeRNv9tWRy4oUjbHR3NC1zOo7BbItD)
+
+
+---
+
+[Go Back to Previous Section](../README.md)
