@@ -20,13 +20,13 @@ sudo apt install krb5-kdc krb5-admin-server krb5-config
 ````
 
 #### 1.1.3 Edit Kerberos Configuration File
-Edit the Kerberos configuration file (/etc/krb5.conf) to define the realm, KDC information, and global parameters.
+Edit the Kerberos configuration file (/etc/krb5.conf) to define the realm, KDC information, and global parameters.  
 Edit kdc configuration file (/etc/kdc.conf)  to Specify KDC settings, policies, and encryption types as it configures the Kerberos Key Distribution Center (KDC).  
 ```shell
 nano etc/krb5.conf
 ```
-![kerberos config ](https://drive.google.com/uc?id=1sLZvU1UB9tm82p7lptB1XpEaMpnp1_y5)
-![ ](https://drive.google.com/uc?id=1DiYq1lWtrWH2hTibS_1Xb6wKYBpDiqNq)
+![kerberos config ](https://drive.google.com/uc?id=1mz7qUFRnorpId6izc37X86KWUpvTtOV3)
+
 
 ```shell
 nano etc/kdc.conf
@@ -56,13 +56,7 @@ kadmin.local:get principals
 ![ ](https://drive.google.com/uc?id=1TxbNwM6RKU801TemQfFJt5cBfAQ1OyNA)
 
 
-#### 1.2.2  Create a Keytab File  
-The keytab file securely stores long-term authentication keys, allowing services to authenticate without user interaction in a Kerberos environment.
-````shell  
-file kadm5.keytab
-````
-![](https://drive.google.com/uc?id=1ThVI76fOqU273ZcY9l6Freav3oepD379)
-#### 1.2.3 Create Kerberos ticket-granting ticket (TGT)
+#### 1.2.2 Create Kerberos ticket-granting ticket (TGT)
 TGT is created  during a user's login session to allowing them to access services without re-entering their password.
 ````shell  
 kinit 
@@ -72,7 +66,7 @@ klist -kte kadm5.keytab
 ![ticket generating](https://drive.google.com/uc?id=1eF-4tgYkZxQWudmYfHKKV72MShNUgGWr)
 ![](https://drive.google.com/uc?id=1ThVI76fOqU273ZcY9l6Freav3oepD379)
 
-#### 1.2.4 Add policies to each user
+#### 1.2.3 Add policies to each user
 Policy sets security rules for aspects like passwords, ticket duration, and encryption settings for user and service principals.
 we add a principal for the root user associated with the KDC server, specifying a key version of 1 and using the AES256 encryption type.
 The key is then written to a keytab file (kadm5.keytab) for secure authentication,
