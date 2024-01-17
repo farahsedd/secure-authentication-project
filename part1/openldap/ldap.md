@@ -1,6 +1,6 @@
 
 **1. Configure an OpenLDAP server with a minimum of two users and two groups.**
-![SSH Logo](https://drive.google.com/uc?id=)
+
 
  a. Installation:
 
@@ -138,6 +138,7 @@ sudo apt install libnss-ldap libpam-ldap ldap-utils nscd -y
 session optional pam_mkhomedir.so skel=/etc/skel umask=077
 ```
 - Test user authentication from client's machine
+
 @@@@@@@@   add image here @@@@@@
 
 **4. Test the secure aspect of LDAP with LDAPS and describe its various advantages.**
@@ -160,7 +161,7 @@ sudo ldapmodify -Y EXTERNAL -H ldapi:/// -f SSL-LDAP.ldif
 TLS_CACERT /etc/ldap/sasl2/ca-certificates.crt
 TLS_REQCERT allow
 ````
-#####On the client's side:
+##### On the client's side:
 - check server certificate:
 ````shell
 openssl s_client -connect 192.168.1.13 -showcerts > ldap_server_certs.pem
@@ -168,4 +169,5 @@ openssl s_client -connect 192.168.1.13 -showcerts > ldap_server_certs.pem
 - add server certificate to /etc/ldap/sasl2 and /usr/local/share/ca-certificates
 - configure ldap.conf file just like the server
 - restart the nscd and test:
+
 ![ldaps](https://drive.google.com/uc?id=1-ts3dGjOKdfhQySYb0qzB0z-jP4vvTJM)
