@@ -117,6 +117,7 @@ wget farah@192.168.1.12:8000/farah-key.pub
 # do the same for ranim's and chiraz's files
 ````
 - upload certificate for each user using LAM
+
 ![certupload](https://drive.google.com/uc?id=1NZL-R_PthNUW3fIwNLJn1acnr0nqyZqM)
  
 **3. Ensure successful user authentication on the OpenLDAP server.**
@@ -132,14 +133,21 @@ wget farah@192.168.1.12:8000/farah-key.pub
 sudo apt install libnss-ldap libpam-ldap ldap-utils nscd -y
 ````
 - Edit [/etc/nsswitch.conf](nsswitch.conf) file (change passwd, group and shadow attributes to 'ldap compat')
-- Edit /etc/pam.d/common-password and  delete "use_authtok"
+- Edit /etc/pam.d/common-password and  delete "use_authtok" and add this line
+
+![login](https://drive.google.com/uc?id=1Uv1XDjfjPZtI6wCKqTb1NIKmDj5IE0it)
+
 - Edit /etc/pam.d/common-session and add this line
+
+![login](https://drive.google.com/uc?id=1pTESP6Xa4dK9VrtgMRHOXBux8XTqtH_3)
+
 ```shell
-session optional pam_mkhomedir.so skel=/etc/skel umask=077
+sudo systemctl restart nscd
+sudo systemctl enable nscd
 ```
 - Test user authentication from client's machine
-
-@@@@@@@@   add image here @@@@@@
+![login](https://drive.google.com/uc?id=1EsqcY0xyIxkGUuoonQYFrPyiRkaTFhU5)
+![ldapsearch](https://drive.google.com/uc?id=1dGyHvdDzGXmxRQhEUEtNbCvCrOFzbXTv)
 
 **4. Test the secure aspect of LDAP with LDAPS and describe its various advantages.**
 - generate a self signed server certificate, add it to /etc/ldap/sasl2 and change to appropriate permissions for OpenLDAP 
@@ -171,3 +179,11 @@ openssl s_client -connect 192.168.1.13 -showcerts > ldap_server_certs.pem
 - restart the nscd and test:
 
 ![ldaps](https://drive.google.com/uc?id=1-ts3dGjOKdfhQySYb0qzB0z-jP4vvTJM)
+
+### Advantages of LDAPS compared to LDAP:
+
+- ***Encryption:*** LDAPS **encrypts** the communication between the LDAP client and server using **SSL/TLS**. This ensures that sensitive data, such as login credentials, is transmitted securely, mitigating the risk of eavesdropping and unauthorized access.
+
+- ***Data Integrity:*** LDAPS provides data integrity through the use of SSL/TLS. This means that the **information exchanged between the LDAP client and server is protected from tampering or modification** during transit.
+
+- ***Authentication:*** LDAPS enhances authentication by **requiring both parties to present valid certificates**. This adds an extra layer of security compared to standard LDAP, where data is transmitted in plaintext, making it **susceptible to unauthorized access or man-in-the-middle** attacks.
