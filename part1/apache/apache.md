@@ -1,4 +1,4 @@
-**3.1 Configure Apache for OpenLDAP authentication. & 3.2 Ensure web page access is restricted to members of the appropriate group in OpenLDAP.****
+**3.1 Configure Apache for OpenLDAP authentication. & 3.2 Ensure web page access is restricted to members of the appropriate group in OpenLDAP.**
 
 - enable ldap's needed modules
 ````shell
