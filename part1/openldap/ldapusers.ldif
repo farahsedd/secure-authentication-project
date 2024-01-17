@@ -1,0 +1,39 @@
+dn: uid=farah,ou=Departement,dc=projet,dc=local
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: farah
+cn: farah
+sn: seddik
+mail: farahseddik500@gmail.com
+user Password: {SSHA}9UcuØVKC5sZ2Cp65LSYLORoqulT9GSAv
+homeDirectory: /home/userfarah
+uidNumber: 3000
+gidNumber: 3000
+
+dn: uid=ranim,ou=Departement,dc=projet,dc=local
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: ranim
+cn: ranim
+sn: benmbarek
+mail: ranim.benmbarek@insat.ucar.tn
+ou-Departement,dc=projet,dc=local
+userPassword: {SSHA}W3XCLØrfkMGMp2nSaeQGDEZ4edJ6hQe5
+homeDirectory: /home/userranim
+uidNumber: 3001
+gidNumber: 3000
+
+dn: uid=chiraz,ou=Departement,dc=projet,dc=local
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: chiraz
+cn: chiraz
+sn: doss
+mail: chiraz.doss@insat.ucar.tn
+userPassword:{SSHA}mw8pmKP0n0u ZvyGGV9VZnJ3uQ/uNQ0p4
+homeDirectory: /home/userchiraz
+uidNumber: 4000
+gidNumber: 4000

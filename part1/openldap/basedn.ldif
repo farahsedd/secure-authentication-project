@@ -1,0 +1,7 @@
+dn: ou=Departement,dc=projet,dc=local
+objectClass: organizationalUnit
+ou: Departement
+
+dn:ou=Groupe,dc=projet,dc=local 6
+objectClass: organizationalUnit
+ou: Group

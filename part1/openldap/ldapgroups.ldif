@@ -1,0 +1,9 @@
+dn: cn=IT,ou=Groupe,dc=projet,dc=local
+objectClass: posixGroup
+cn: IT
+gidNumber: 3000
+
+dn: cn=HR,ou=Groupe,dc=projet,dc=local
+objectClass: posixGroup
+cn: HR
+gidNumber: 4000
