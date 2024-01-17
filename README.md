@@ -2,17 +2,28 @@
 ### Project Objective
 This project's primary aim is to build a secure authentication and network services infrastructure using recognized technologies like OpenLDAP, SSH, Apache, OpenVPN, DNS, and Kerberos.
 
-### Technologies Used:
-- **![](https://www.axonius.com/hubfs/Adapter%20Logos/OpenLDAP%20Logo.png#keepProtocol) OpenLDAP**:  
+### Technologies Used:  
+<div style="display: flex; justify-content: right; align-items: center;margin-right:50px;">
+    <img src="https://www.axonius.com/hubfs/Adapter%20Logos/OpenLDAP%20Logo.png" height="40" width="40" style="margin-right: 10px;" />
+    <img src="https://cdn-icons-png.flaticon.com/512/5136/5136897.png" height="40" width="40" style="margin-right: 10px;" />
+    <img src="https://britewire.com/wp-content/uploads/apache-http-server-300x300.jpg" height="40" width="40" style="margin-right: 10px;" />
+    <img src="https://usermanual.vtenext.com/uploads/images/gallery/2023-03/openvpn-logo.jpg" height="40" width="40" style="margin-right: 10px;" />
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSIsU-44la2KmoDhrT7gUCh2r2dsPVRx_BaQ&usqp=CAU" height="40" width="40" style="margin-right: 10px;" />
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUgsK-4bNt8VqwyLZTlJvD6dkQkyP67ElV7Dg8KW0DrjDfX3ZpDGouBMPakWXXUWW0KCg&usqp=CAU" height="40" width="40" />
+</div>
+
+
+
+- **OpenLDAP**:  
   (LDAP: Lightweight Directory Access Protocol) serves as the centralized and organized directory service for efficient storage, management, and retrieval of user authentication / authorization data.
   
-- **![]()SSH** (Secure Shell):  
+- **SSH** (Secure Shell):  
     employed for secure remote access to systems, ensuring encrypted communication between the client and the server during authentication and data transfer.
   
-- **![]()Apache**:  
+- **Apache**:  
   serves as the web server, managing role-based access to web-based applications and providing a secure environment for user interactions.
    
-- **![]()OpenVPN**:  
+- **OpenVPN**:  
   employed to create a secure Virtual Private Network (VPN) for secure remote access to internal resources through VPN tunnels, ensuring encrypted communication over untrusted networks.
   
 - **DNS** (Domain Name System):  
