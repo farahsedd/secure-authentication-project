@@ -116,7 +116,7 @@ w
 ````
 ![authenticating using TGT](https://drive.google.com/uc?id=1GuWaL9T5Z3kpAKfJTSy6rMT2AAnH3ag1)
 
-### 3 Create File && send it
+### 3 Create File to test secure copy
  #### 3.1 create file
 ````shell 
 echo 'testing connection'> file
