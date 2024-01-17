@@ -35,3 +35,7 @@ create the [html page](index.html) that a user will see if authenticated
 
 ![ranim](https://drive.google.com/uc?id=1DEwcOSl4CFC6jOdpZw14lYbkalyl1kR0)
 ![ranim result](https://drive.google.com/uc?id=10B63q5j96V5rcPDu7-dEFKOvPsIBV2PU)
+
+---
+
+[Go Back to Previous Section](../part1.md)

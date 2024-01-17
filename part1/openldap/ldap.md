@@ -187,3 +187,8 @@ openssl s_client -connect 192.168.1.13 -showcerts > ldap_server_certs.pem
 - ***Data Integrity:*** LDAPS provides data integrity through the use of SSL/TLS. This means that the **information exchanged between the LDAP client and server is protected from tampering or modification** during transit.
 
 - ***Authentication:*** LDAPS enhances authentication by **requiring both parties to present valid certificates**. This adds an extra layer of security compared to standard LDAP, where data is transmitted in plaintext, making it **susceptible to unauthorized access or man-in-the-middle** attacks.
+
+
+---
+
+[Go Back to Previous Section](../part1.md)

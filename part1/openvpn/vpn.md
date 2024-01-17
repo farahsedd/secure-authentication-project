@@ -94,3 +94,6 @@ sudo systemctl restart openvpn-server@server.service
 
 ![farah test](https://drive.google.com/uc?id=1mCcLSF3v3dQf9puvv3g7L93jb4AS8iBP)
 
+---
+
+[Go Back to Previous Section](../part1.md)

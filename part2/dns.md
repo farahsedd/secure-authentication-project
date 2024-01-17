@@ -71,3 +71,8 @@ dig openvpn.projet.local
 test each FQDN in browser
 
 ![](https://drive.google.com/uc?id=1qpyeRNv9tWRy4oUjbHR3NC1zOo7BbItD)
+
+
+---
+
+[Go Back to Previous Section](../README.md)

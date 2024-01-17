@@ -30,3 +30,6 @@ use command:
 ````shell
 ssh <username>@<ldap client ip address>
 ````
+---
+
+[Go Back to Previous Section](../part1.md)
