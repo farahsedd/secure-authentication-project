@@ -1,6 +1,7 @@
 ### A ***VPN*** (Virtual Private Network) 
 is a secure, encrypted connection that enables users to access a private network over the internet. It ensures privacy and data security by creating a protected tunnel between the user's device and the network server, commonly used for secure remote access and private internet browsing.
 
+![vpn schema](https://fortinetweb.s3.amazonaws.com/docs.fortinet.com/v2/resources/7eefb386-9916-11e9-81a4-00505692583a/images/e4bba407cc0825073e57c9d0aea7b1c4_diagram-ldap.png)
 ---
 **4.1 Install and configure OpenVPN for OpenLDAP authentication.**
 
