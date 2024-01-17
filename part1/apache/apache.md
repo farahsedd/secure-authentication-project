@@ -5,6 +5,7 @@
 sudo a2enmod ldap authnz_ldap
 sudo systemctl restart apache2
 ````
+
 ````shell
 sudo nano /etc/apache2/sites-available/auth-ldap.conf
 ````
@@ -20,12 +21,16 @@ sudo nano /var/www/html/auth-ldap/index.html
 
 create the [html page](index.html) that a user will see if authenticated
 
+---
+
 **3.3 Test access for an authorized and an unauthorized user on a selected website.**
 
-***for a user who does not in HR group (does not have access)***
+***for a user who is not in HR group (does not have access)***
 
 ![farah](https://drive.google.com/uc?id=1KJmfLfWfJMGTZ9I7SFcWD6LtnmZbZk-j)
-![farah result](https://drive.google.com/uc?id=1Hp2z9LWKUy3FGn2vHjDf1xchylRiAicY)
+![farah result](https://drive.google.com/uc?id=1ayH2DMMARLpzkBVeaHJc3EGRQl83bFxs)
+
+***for a user who is in HR group (does have access)***
 
 
 ![ranim](https://drive.google.com/uc?id=1DEwcOSl4CFC6jOdpZw14lYbkalyl1kR0)
