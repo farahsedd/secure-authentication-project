@@ -51,7 +51,7 @@ Opting for SSH as the authentication service enhances security, particularly for
 
 ---
 
-In memory of the numerous VMs we lost in this project. You'll never be forgotten
+In memory of the numerous VMs we lost in this project. You'll never be forgotten [](https://www.reddit.com/media?url=https%3A%2F%2Fpreview.redd.it%2Ffull-version-of-the-apple-saluting-salute-emoji-v0-qs9r4sv6abxa1.png%3Fwidth%3D168%26format%3Dpng%26auto%3Dwebp%26s%3D2abce4e68d1a87f5dd98d63d35317b28f0c5fe4b)
 
 <img src="https://drive.google.com/uc?id=1RG881fH8Qwcxha_O5BjhKb_QWaY3LDGF" width="420"/> <img src="https://tech.paayi.com/uploads/media/Sudo-not-found.png" width="420"/> 
 <img src="https://drive.google.com/uc?id=1l5G7kHRFwODONUxWZ6mAkskc15sA_b0_" width="420"/> <img src="https://i.kym-cdn.com/photos/images/original/000/569/487/ebb.jpg" width="420"/> 
