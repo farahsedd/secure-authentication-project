@@ -5,7 +5,8 @@ is a secure, encrypted connection that enables users to access a private network
 ---
 **4.1 Install and configure OpenVPN for OpenLDAP authentication.**
 
-a. Set Up and Configure an OpenVPN Server
+***Set Up and Configure an OpenVPN Server***
+
 - Install needed packages
 ````shell
 sudo apt update
@@ -45,17 +46,21 @@ This means when a client and server attempt to establish a shared symmetric key,
 sudo cp /home/sammy/easy-rsa/pki/private/server.key /etc/openvpn/server/
 ````
 
-- create CA certificate 
+- create CA certificate
+
 ![build-ca](https://drive.google.com/uc?id=1kWJP1vuug5QgdanR5bVI77Mr8XEwvLkG)
 
 - sign server request
+
 ![sign-req](https://drive.google.com/uc?id=1bDaxSAM3sHL8Hh4FfkEeYtd_-6eIKvRW)
 
 - create client certificate
+
 ![client cert](https://drive.google.com/uc?id=1lT6_w3V-GOb3YIdC-RpYgcDFwZHrbyR1)
 ![client cert](https://drive.google.com/uc?id=19T4FbskgKU9LzQxmswVWNrQOtxUjU1XL)
 
 - configure /etc/openvpn/server/server.conf
+
 ![server.conf](https://drive.google.com/uc?id=1x-hyGuv7cEb4H7hYdkGLFgIHpe29IGj7)
 ![server.conf](https://drive.google.com/uc?id=1QeOZWZJVxRcVLPkug3lS4No_2QtcFb7G)
 ![server.conf](https://drive.google.com/uc?id=1RclSuJj7d7rfYKrZbKivavy8ShhD3i3B)
@@ -65,9 +70,11 @@ sudo cp /home/sammy/easy-rsa/pki/private/server.key /etc/openvpn/server/
 ![server.conf](https://drive.google.com/uc?id=1ZQvd6qzzO9rBmahXOcfWUuIP9ja5wDng)
 
 - configure /etc/openvpn/auth/ldap.conf
+
 ![ldap.conf](https://drive.google.com/uc?id=1HWIKql1t295vP1uRvYFhwKdjIz0aSisr)
 
 - configure /etc/openvpn/client/client.ovpn
+
 ![client.ovpn](https://drive.google.com/uc?id=1-5lg0XNWKsfTr11jtH6zutu19GX991n1)
 
 ````shell
