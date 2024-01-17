@@ -68,10 +68,12 @@ sudo cp /home/sammy/easy-rsa/pki/private/server.key /etc/openvpn/server/
 ta.key = TLS-Auth Key, is a pre-shared secret key used for additional security in the TLS handshake process.
 
 ![server.conf](https://drive.google.com/uc?id=1cV18esSazMql0s5_apl6IWQr1AMPu6Of)
+
+- configure /etc/openvpn/auth/ldap.conf
+
 ![server.conf](https://drive.google.com/uc?id=1sC3DNXDxPO08ycWI1yIYIQOQUAmsnqbf)
 ![server.conf](https://drive.google.com/uc?id=1ZQvd6qzzO9rBmahXOcfWUuIP9ja5wDng)
 
-- configure /etc/openvpn/auth/ldap.conf
 
 ![ldap.conf](https://drive.google.com/uc?id=1HWIKql1t295vP1uRvYFhwKdjIz0aSisr)
 
