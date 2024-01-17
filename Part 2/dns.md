@@ -6,7 +6,7 @@ It serves as a directory for the internet, making it easier for people to access
 
 A DNS server, or Domain Name System server, is a critical component of the internet infrastructure that translates human-readable domain names into machine-readable IP addresses.  
  ## Configuration of a DNS server
-1.1 Configurez un serveur DNS (Bind) sur une machine distincte.  
+1.1 Set up a DNS server (Bind) on a separate machine.  
 
 1.1.1 Install BIND DNS Server && dnsutils package
 ```shell
