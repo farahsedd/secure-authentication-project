@@ -35,7 +35,7 @@ Edit the main BIND configuration file and specify your domain name:
 Creating DNS zone files involves defining resource records (RRs) for a domain, specifying information like IP addresses, mail servers, and other associated resources
 
 ![](https://drive.google.com/uc?id=1tGGoO1O_SjmZOfMVyNeqfUdFODfCrFwy)
-![](https://drive.google.com/uc?id=1zZgTcrxOJDGgibmhEhX7qgx8SOxYCfj4)
+![](https://drive.google.com/uc?id=1ALjNDglIqDBL5GP5UJkA5lp1xf67BqzW)
 
 
 1.1.5  Create Reverse DNS Zone  
