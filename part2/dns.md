@@ -59,4 +59,15 @@ ensures the correct syntax and structure, helping to prevent errors and ensure t
 1.1.8 Restart server and verify resolution
 ![](https://drive.google.com/uc?id=1qdw5OymNAJD3tsPx-qMaPrmcOMGQmFT7)
 ![](https://drive.google.com/uc?id=12_JVrdK-3UjRgiSuUhho4q3qeJHxZ447)
+
+````shell
+dig main.projet.local
+dig ldap.projet.local
+dig openvpn.projet.local
+````
+
 ![](https://drive.google.com/uc?id=152z_cfKNTvyFq1BN9xxYsxVRYT-HO4av)
+
+test each FQDN in browser
+
+![](https://drive.google.com/uc?id=1qpyeRNv9tWRy4oUjbHR3NC1zOo7BbItD)
