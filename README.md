@@ -22,6 +22,12 @@ manedrouch
   implemented for secure ticket-based authentication within the network, providing a trusted third-party authentication service.
  ___
 
-![SSH Logo](https://drive.google.com/uc?id=1hN3bVwdTa8PItc5USiAJ4QcRmvcgEt-b)
+## Overview
 
-<img src="https://drive.google.com/file/d/1hN3bVwdTa8PItc5USiAJ4QcRmvcgEt-b/view?usp=drive_link" alt="LDAP Logo" width="50"/>
+![SSH Logo](https://drive.google.com/uc?id=)
+### [Part 1: Authentication with OpenLDAP, SSH, Apache and OpenVPN](./part1/part1.md)
+in which we used openldap to manage user data and integrated multiple technologies to implement user authentication
+### [Part 2: Management of network services with DNS](./part2/dns.md)
+
+### [Part 3: Kerberos Authentication](./part3/kerberos.md)
+
