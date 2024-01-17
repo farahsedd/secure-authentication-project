@@ -64,6 +64,7 @@ sudo cp /home/sammy/easy-rsa/pki/private/server.key /etc/openvpn/server/
 ![server.conf](https://drive.google.com/uc?id=1x-hyGuv7cEb4H7hYdkGLFgIHpe29IGj7)
 ![server.conf](https://drive.google.com/uc?id=1QeOZWZJVxRcVLPkug3lS4No_2QtcFb7G)
 ![server.conf](https://drive.google.com/uc?id=15GmWSVNHMtkeQCO9Os6eLR2cn6IfFNMI)
+
 ta.key = TLS-Auth Key, is a pre-shared secret key used for additional security in the TLS handshake process.
 
 ![server.conf](https://drive.google.com/uc?id=1cV18esSazMql0s5_apl6IWQr1AMPu6Of)
