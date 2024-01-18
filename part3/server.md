@@ -80,10 +80,8 @@ The key is then written to a keytab file (kadm5.keytab) for secure authenticatio
 ````shell  
 apt install openssh-server
 ````
-![install ssh](https://drive.google.com/uc?id=16PHX6iz28uoeYwWy-D_kdbjJnOdRIE3E)
-
 Uncomment and set GSSAPIAuthentication and GSSAPICleanUpCreadentials to yes in SSH configuration files. Restart the SSH service.
-
+![install ssh](https://drive.google.com/uc?id=16PHX6iz28uoeYwWy-D_kdbjJnOdRIE3E)
 ![configure ssh files](https://drive.google.com/uc?id=16PHX6iz28uoeYwWy-D_kdbjJnOdRIE3E)
 
 #### 2.1.2 Create a Principal Service for SSH
@@ -121,3 +119,5 @@ w
 ````shell 
 echo 'testing connection'> file
 ````
+
+[Check client configuration](./client.md)

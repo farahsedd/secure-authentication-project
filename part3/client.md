@@ -54,3 +54,5 @@ securely copies the file named "file" from the remote host kdc.server.tn to the 
 scp kdc.server.tn:file .
 ````
 ![](https://drive.google.com/uc?id=10TP-3xb9u3cy-S9R78vtBzlfpeAbTg4v)
+
+[Go back](./kerberos.md)
